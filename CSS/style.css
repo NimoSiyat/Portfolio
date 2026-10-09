@@ -239,3 +239,162 @@ body {
         padding: 18px;
     }
 }
+
+/* Projects page introduction */
+.page-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f4f8;
+}
+
+.section {
+    padding: 40px 8%;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Skills */
+.skills-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    height: 12px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* Project cards */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn,
+.details-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #2563eb;
+    color: white;
+}
+
+.projects-container,
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card,
+.service-card {
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3,
+.service-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.project-details {
+    padding: 10px;
+    background: #f0f4f8;
+    border-radius: 5px;
+}
+
+/* Contact form */
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+#form-feedback {
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #172033;
+    color: white;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+    .projects-container,
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 30px 5%;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
